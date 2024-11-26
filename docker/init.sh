@@ -22,7 +22,9 @@ bench set-redis-socketio-host redis:6379
 sed -i '/redis/d' ./Procfile
 sed -i '/watch/d' ./Procfile
 
-bench get-app insights --branch version-3
+# bench get-app insights --branch version-3
+bench get-app --branch main https://github.com/hoandhh/insights.git
+
 
 bench new-site insights.localhost \
 --force \
